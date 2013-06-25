@@ -1,0 +1,36 @@
+<widget>
+	<type>pactResponseLayout</type>
+	<parameters>
+		<xsl>scp-associated-agreements</xsl>
+		<pactrequest><![CDATA[<pactrequest>
+						<target>
+							<SelectTimeSpanEntity>
+                                <partassociatedidentifier><uid>{uid}</uid></partassociatedidentifier>
+                            </SelectTimeSpanEntity>
+						</target>
+						<context>
+                            <locale>
+                                <language>en</language>
+                                <country>GB</country>
+                            </locale>
+                            <actor><actorUid>123</actorUid></actor>
+                            <party><partyUid>123</partyUid></party>
+                            <sessionId>{sessionId}</sessionId>
+                            <dateFormat>dd/MM/yyyy</dateFormat>
+                        </context>
+						<timepoint>
+							<effectivetime>now</effectivetime>
+							<physicaltime>now</physicaltime>
+						</timepoint>
+						<return>
+							<name>asIdentifiedEntity</name>
+							<params><descriptionPattern>{description} ({status})|{entityType}|{status}</descriptionPattern></params>
+						</return>
+					</pactrequest>]]></pactrequest>
+	</parameters>
+	<attributes>
+		<css>scp-associated-agreements.css</css>
+		<js>scp-associated-agreements.js</js>
+		<delayLoad>true</delayLoad>
+	</attributes>
+</widget>

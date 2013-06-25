@@ -1,0 +1,9 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-finance-nonlifereserves.html</url>
+	</parameters>
+	<attributes>
+		<page.title>Non-life reserving accounts</page.title>
+	</attributes>
+</widget>

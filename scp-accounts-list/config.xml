@@ -1,0 +1,32 @@
+<widget>
+	<type>pactResponse</type>
+	<parameters>
+		<xsl>scp-accounts-list</xsl>
+		<pactrequest>
+			<![CDATA[<pactrequest>
+						<target>
+							<SelectTimeSpanEntity>
+								<entityType>{accountType}</entityType>
+							</SelectTimeSpanEntity>
+						</target>
+						<context>
+							<locale><language>en</language><country>GB</country></locale>
+							<actor><actorUid>123</actorUid></actor>
+							<party><partyUid>123</partyUid></party>
+						</context>
+						<timepoint>
+							<effectivetime>now</effectivetime>
+							<physicaltime>now</physicaltime>
+						</timepoint>
+						<return>
+							<name>asIdentifier</name>
+						</return>
+					</pactrequest>]]>
+		</pactrequest>
+	</parameters>
+	<attributes>
+		<js>scp-accounts-list.js</js>
+		<channel>accounts</channel>
+		<displayHeader>false</displayHeader>
+	</attributes>
+</widget>

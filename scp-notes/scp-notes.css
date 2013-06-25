@@ -1,0 +1,103 @@
+.content-header-pulldown-tabs .notes {
+	background-image: url('pencil-small-light.png');
+}
+.edit{
+	width:520px;
+}
+#notes {
+	margin-left: 4em;
+	min-height: 200px;
+	width: 1040px; 
+	overflow: hidden;
+}
+#notes_ul:empty:before {
+	content: "No notes yet";
+	margin-left: 12em;
+	padding: 2em 3em;
+	color: rgba(255,255,255,0.5);
+	font-size: 2em;
+	border: medium dashed;
+}
+#notes_ul {  
+	position: relative;
+	margin-top: 48px;
+	left: 0px; /* Needs to be present and 0px */
+	list-style-type: none;
+	padding: 0px;
+	width: 9999px;
+	padding-bottom: 10px;
+}
+.add:before {
+	content: url('symbol_add.png') no-repeat;
+	width: 3em;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: 13em;
+    right: 7em;
+}
+#prev > a {
+	position: absolute;
+	top: 13em;
+	width: 3em;
+    height: 50px;
+    background: url('arrow_left2.png') no-repeat;   
+}
+#next > a {
+    position: absolute;
+	top: 13em;
+	right: 3em;
+	width: 3em;
+    height: 50px;
+    background: url('arrow_right2.png') no-repeat; 
+}
+.note {
+	float: left;
+	border-radius: 10px 0 10px 10px;
+	width: 500px;
+	height: 160px;
+	background: #FFF;
+	text-indent: 10px;
+
+}
+.noteContainer {
+	float: left;
+	width: 500px;
+	height: 160px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+.noteContainer.SystemNote a{
+	display: none;
+}
+.tab {
+	z-index: 9999;
+	position: absolute;
+	width: 200px;
+	height: 40px;
+	margin: -40px 0 0 300px;
+	background: white;
+	border-radius: 10px 10px 0 0;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+.cross {
+	z-index: 9999;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin: 14px 0 0 150px;
+	background: grey url('symbol-cross-light.png') no-repeat center center;
+	border-radius: 10px;
+}
+.cross:hover {
+	background: red url('symbol-cross-light.png') no-repeat center center;
+}
+.serviceError {
+	color: rgba(255,255,255,0.8);
+	font-size: 2em;
+	margin-left: 2em;
+	width: 10%;
+}

@@ -1,0 +1,17 @@
+.scp-associated-agreements h1 {
+	padding: 10px 0 10px 30px;
+	background: url('link-dark-small.png') no-repeat center left;
+	font-size: 120%;
+	border-bottom: thin solid;
+	font-weight: normal;
+}
+.scp-associated-agreements li {
+	margin: 1em 0;
+	list-style: none;
+	font-weight: bold;
+}
+.scp-associated-agreements li a {
+	float: right;
+	margin-right: 1em;
+	background-color: #777;
+}

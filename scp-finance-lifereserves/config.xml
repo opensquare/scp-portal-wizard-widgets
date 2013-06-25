@@ -1,0 +1,9 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-finance-lifereserves.html</url>
+	</parameters>
+	<attributes>
+		<page.title>Life reserving accounts</page.title>
+	</attributes>
+</widget>

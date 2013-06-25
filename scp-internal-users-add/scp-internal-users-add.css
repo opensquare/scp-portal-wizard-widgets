@@ -1,0 +1,12 @@
+.scp-internal-users-add {
+	padding: 10%;
+	width: 30em;
+}
+.scp-internal-users-add .error {
+	border: 2px red solid;
+}
+
+.scp-internal-users-add label {
+	display: inline-block;
+	width: 50%;
+}

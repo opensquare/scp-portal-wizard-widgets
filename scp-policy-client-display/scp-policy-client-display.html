@@ -1,0 +1,76 @@
+	<div class="side1">
+		<div class="picture {{//*[@name='gender']}}"></div>
+		<div class="status">{{/pactresponse.entity.timespanentity.timespanentityversion.status}}</div>
+	</div><div class="side2">
+		<div class="property-group name">
+			<span class="property-value clientIndDetails-title auto" title="Title">{{//*[@name='title']}}</span>
+			<span class="property-value clientIndDetails-firstName auto" title="First name">{{//*[@name='firstName']}}</span>
+			<span class="property-value clientIndDetails-middleName auto" title="Middle name">{{//*[@name='middleName']}}</span>
+			<span class="property-value clientIndDetails-surname auto" title="Surname">{{//*[@name='surname']}}</span>
+		</div>
+		<div class="property-group genderage">
+			<span class="property-label">Gender</span>
+			<span class="property-value auto">{{//*[@name='gender']}}</span>
+			<span class="property-label">Date of birth</span>
+			<span class="property-value auto">{{//*[@name='dob']}}</span>
+		</div>
+		<div class="property-group occupation">
+			<span class="property-label">Occupation</span>
+			<span class="property-value medium">{{//*[@name='occupation']}}</span>
+			<span class="property-label">Code</span>
+			<span class="property-value auto">{{//*[@name='occupationCode']}}</span>
+		</div>
+		<details class="contact-details" open>
+			<summary>Contact details</summary>
+			<div class="map">
+				<a href="https://maps.google.com/maps?q={{//*[@name='postalCode']}}" target="_new" title="Open a detailed map in a new window">
+					<img src="https://maps.googleapis.com/maps/api/staticmap?size=100x100&zoom=4&markers=color:white%7Csize:small%7C{{//*[@name='postalCode']}}&sensor=false"/>
+				</a>
+			</div>
+			<div class="address">
+				<div class="property-group">
+					<span class="property-label">Address</span>
+					<span class="property-value long">{{//*[@name='addressLine1']}}</span>
+				</div>
+				<div class="property-group">
+					<span class="property-label"></span>
+					<span class="property-value long">{{//*[@name='addressLine2']}}</span>
+				</div>
+				<div class="property-group">
+					<span class="property-label"></span>
+					<span class="property-value long">{{//*[@name='addressLine3']}}</span>
+				</div>
+				<div class="property-group">
+					<span class="property-label"></span>
+					<span class="property-value long">{{//*[@name='addressLine4']}}</span>
+				</div>
+				<div class="property-group">
+					<span class="property-label">Postcode</span>
+					<span class="property-value address-postalCode-value medium">{{//*[@name='postalCode']}}</span>
+				</div>
+				<div class="property-group">
+					<span class="property-label"></span>
+					<span class="property-value medium">{{//*[@name='country']}}</span>
+				</div>
+			</div>
+			<div class="property-group email">
+				<span class="property-label">Email</span>
+				<span class="property-value medium">{{//*[@name='email']}}</span>
+				<a class="action send" href="mailto:{{//*[@name='email']}}" title="Send an email to this address"></a>
+			</div>
+			<div class="property-group phone">
+				<span class="property-label">Home phone</span>
+				<span class="property-value medium">{{//*[@name='homePhone']}}</span>
+				<a class="action call" href="callto:{{//*[@name='homePhone']}}" title="Call this number"></a>
+			</div>
+		</details>
+		<details class="motoring-details">
+			<summary>Motoring details</summary>
+			<div class="property-group licence">
+				<span class="property-label">Licence type</span>
+				<span class="property-value short">{{//*[@name='licenceTypeCode']}}</span>
+				<span class="property-label">Licence held</span>
+				<span class="property-value short">{{//*[@name='licenceHeldYears']}}</span>
+			</div>
+		</details>
+    </div>

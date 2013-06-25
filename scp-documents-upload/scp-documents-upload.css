@@ -1,0 +1,51 @@
+.scp-documents-upload details {
+  display: inline-block;
+  margin-bottom: 2em;
+  padding: 0;
+  border: medium solid #0DB4F2;
+  border-radius: 1em;
+}
+.scp-documents-upload summary {
+  display: inline-block;
+  margin: 0;
+  padding: 0.5em;
+  color: #fff;
+  background: #0DB4F2;
+  border: none;
+  border-radius: 0.5em;
+}
+.scp-documents-upload div {
+  margin: 1em;
+}
+#docUpload {
+  font-size:  80%;
+  margin: 2em;
+}
+
+#docUpload input[type=file] {
+  border: none;
+}
+
+#docUpload input[type=text] {
+  border-radius: 5px;
+  width: 20%;
+}
+
+#docUpload input[type=button] {
+  background-color: #9BBB59;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.toggleOff:after { 
+  content: "►";
+  font-size: 80%;
+  padding: 2px;
+}
+
+.toggleOn:after { 
+  content: "▼";
+  font-size: 80%;
+  padding: 2px;
+}

@@ -1,0 +1,126 @@
+.scp-scheduler-status {
+	text-align: right;
+	padding: 1em;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: #888;
+}
+.scp-scheduler-status success,
+.scp-scheduler-status now{
+	display:none;
+}
+.scheduler-job-list ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+.scheduler-job-list li,
+.scheduler-job-list .jobsHeader{
+	padding: 1em 1.5em 1em 30px;
+}
+.scheduler-job-list li:nth-child(even){
+	background-color: rgba(119,119,119,0.3);
+}
+.scheduler-job-list li {
+	background: url('gear-dark-small.png') no-repeat 12px 16px;
+}
+.scheduler-job-list li.jobsHeader{
+	background: none;
+	font-weight: bold;
+}
+.scheduler-job-list li>span{
+	display:inline-block;
+	border-left:1em solid transparent;
+	overflow:hidden;
+	vertical-align:top;
+	width:25%
+}
+.scheduler-job-list .jobName,
+.scheduler-job-list .description{
+	width:23%;
+}
+.scheduler-job-list .nextFireTime{
+	width:20%;
+}
+.scheduler-job-list .status{
+	width:7%;
+}
+.scheduler-job-list .actions{
+	width:auto;
+	overflow:visible;
+	position:relative;
+}
+.scheduler-job-list .title:before{
+	content: '▼';
+}
+.scheduler-job-list .actions .box{
+	margin-top:-1px;
+	padding-top:4px;
+	display:block;
+	border: 2px solid;
+	border-top-width: 0;
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+	border-color:rgba(0,0,0,0.25);
+}
+.scheduler-job-list .box a{
+	display:block;
+	padding:0.25em 1em;
+	color:rgba(0,0,0,0.65);
+}
+.scheduler-job-list .box a:last-child{
+	border-bottom-left-radius:0.4em;
+	border-bottom-right-radius:0.4em;
+}
+.scheduler-job-list .box a:nth-child(even){
+	background-color:#FFF;
+	color:rgba(0,0,0,0.65)
+}
+.scheduler-job-list .box a:nth-child(odd){
+	background-color:#DDD;
+}
+.resultDiv {
+	margin: 0.5em;
+	padding: 0 1em;
+	border: thin inset #fff;
+	border-radius: 0.25em;
+}
+.resultDiv .close{
+	display:block;
+	margin-bottom: 0.25em;
+	text-align: right;
+	font-size: small;
+}
+.resultDiv .close:hover{
+	text-decoration: underline;
+}
+.resultDiv table{
+	width:100%;
+	font-size: small;
+	border-collapse: collapse;
+}
+.resultDiv th, .resultDiv td {
+	padding: 0.75em 0.25em;
+}
+.resultDiv tbody td {
+	border-right: thin solid #AAA;
+}
+.resultDiv tbody td:nth-child(4) {
+	word-break: break-word;
+}
+.resultDiv tbody td:nth-child(5), .resultDiv tbody td:last-child {
+	border-right: none;
+}
+.resultDiv thead {
+	color: #FFF;
+	background-color: #777;
+}
+.resultDiv tbody tr:nth-child(odd) {
+	background-color: white;
+}
+.resultDiv tbody tr:nth-child(even) {
+	background-color: #DDD;
+}
+.resultDiv tfoot{
+	text-align: right;
+}

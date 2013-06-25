@@ -1,0 +1,44 @@
+<widget>
+	<type>pactResponseLayout</type>
+	<parameters>
+		<pactrequest>
+			<![CDATA[<pactrequest>
+				<target><uid>{agreementUid}</uid></target>
+				<context>
+					<locale>
+						<language>en</language>
+						<country>GB</country>
+					</locale>
+					<actor><actorUid>123</actorUid></actor>
+			        <party><partyUid>123</partyUid></party>
+					<process/>
+					<evType/>
+					<evSubType/>
+					<sessionId>{sessionId}</sessionId>
+					<dateFormat>dd/MM/yyyy kk:mm:ss</dateFormat>
+					<timeWarning>2000</timeWarning>
+				</context>
+				<timepoint>
+					<effectivetime>now</effectivetime>
+					<physicaltime>now</physicaltime>
+				</timepoint>
+				<return>
+					<name>asTimeSpanEntityVersionSnapshot</name>
+					<params><useCache>true</useCache><depth>2</depth></params>
+				</return>
+			</pactrequest>]]>
+		</pactrequest>
+	</parameters>
+	<attributes>
+		<css>scp-policy-client-display.css</css>
+		<js>scp-policy-client-display.js</js>
+	</attributes>
+	<filters>
+		<filter>
+			<attributes>
+				<name>valueInjector</name>
+				<htmlTemplate>scp-policy-client-display.html</htmlTemplate>
+			</attributes>
+		</filter>
+	</filters>
+</widget>

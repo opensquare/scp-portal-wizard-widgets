@@ -1,0 +1,10 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-policy-entity.jsp</url>
+	</parameters>
+	<attributes>
+		<js>scp-policy-entity.js</js>
+        <page.title>Policy - Agreement</page.title>
+	</attributes>
+</widget>

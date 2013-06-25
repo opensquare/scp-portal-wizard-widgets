@@ -1,0 +1,50 @@
+/* New page styling */
+article[type='internal'] .new-square[type='mis'] {
+	background-image: url('images/chart-bar-light.png');
+	background-color: #8064A2;
+}
+article[type='internal'] .new-square[type='mis'][subtype='reports'] {
+	background-image: url('images/reports-light.png');
+}
+article[type='internal'] .new-square[type='mis'][subtype='fraud'] {
+	background-image: url('images/binoculars-light.png');
+}
+
+/* Aside (tabs) styling */
+#content aside[type='mis']{
+	background-image: url('images/chart-bar-dark.png');
+	border-color: #8064A2; 
+}
+#content aside[type='mis'].on{
+	background-color: #8064A2; 
+	background-image: url('images/chart-bar-light.png');
+}
+#content aside[type='mis'][subtype='reports']{
+	background-image: url('images/reports-dark.png');
+}
+#content aside[type='mis'][subtype='reports'].on{
+	background-image: url('images/reports-light.png');
+}
+#content aside[type='mis'][subtype='fraud']{
+	background-image: url('images/binoculars-dark.png');
+}
+#content aside[type='mis'][subtype='fraud'].on{
+	background-image: url('images/binoculars-light.png');
+}
+
+/* Article (pages) styling */
+#content article[type='mis'], #content article[type='mis'] .content-helper, #content article[type='mis'] .content-body{
+	border-color: #8064A2;
+}
+#content article[type='mis'] .content-header, #content article[type='mis'] .content-helper{
+	background-color: #8064A2;
+}
+#content article[type='mis']::-webkit-scrollbar-thumb{
+	background-color: #8064A2;
+}
+#content article[type='mis'] .content-header-pulldown {
+	background-color: #8064A2;
+}
+#content article[type='mis'] .content-header-pulldown-tabs>span {
+	background-color: #8064A2;
+}

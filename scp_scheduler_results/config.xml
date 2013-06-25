@@ -1,0 +1,16 @@
+<widget>
+	<type>httpRequest</type>
+	<parameters>
+		<method>GET</method>
+		<url>{scheduler}/results/{query}?offset={offset}&amp;limit={limit}</url>
+		<xsl>results</xsl>
+	</parameters>
+	<attributes>
+		<delayLoad>true</delayLoad>
+		<js>scheduler_results.js</js>
+		<logLimitedUrl>proxy/scheduler/log/{jobName}/{fireTime}?kilobyteLimit=100</logLimitedUrl>
+		<logFileUrl>proxy/scheduler/log/{jobName}-{fireTime}.txt</logFileUrl>
+		<outputLimitedUrl>proxy/scheduler/output/{jobName}/{fireTime}?kilobyteLimit=100</outputLimitedUrl>
+		<outputFileUrl>proxy/scheduler/output/{jobName}-{fireTime}.txt</outputFileUrl>
+	</attributes>
+</widget>

@@ -1,0 +1,11 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-internal-users-list.html</url>
+	</parameters>
+	<attributes>
+		<displayHeader>false</displayHeader>
+		<js>scp-internal-users-list.js</js>
+		<css>scp-internal-users-list.css</css>
+	</attributes>
+</widget>

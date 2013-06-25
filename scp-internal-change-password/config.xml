@@ -1,0 +1,11 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>change-password.jsp</url>
+	</parameters>
+	<attributes>
+		<displayHeader>false</displayHeader>
+		<js>change-password.js</js>
+		<css>change-password.css</css>
+	</attributes>
+</widget>

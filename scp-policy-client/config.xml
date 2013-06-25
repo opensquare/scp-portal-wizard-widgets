@@ -1,0 +1,11 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-policy-client.html</url>
+	</parameters>
+	<attributes>
+		<js>scp-policy-client.js</js>
+		<css>scp-policy-client.css</css>
+		<page.title>Policy - Client</page.title>
+	</attributes>
+</widget>

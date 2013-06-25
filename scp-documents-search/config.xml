@@ -1,0 +1,10 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-documents-search.html</url>
+	</parameters>
+	<attributes>
+		<displayheader>false</displayheader>
+		<page.title>Document search</page.title>
+	</attributes>
+</widget>

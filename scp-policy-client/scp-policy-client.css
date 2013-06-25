@@ -1,0 +1,31 @@
+.scp-policy-client details {
+	margin-left: 15%;
+}
+.scp-policy-client summary {
+	margin-bottom: 1em;
+	font-size: 1.25em;
+	font-weight: normal;
+	color: #777;
+	border-bottom: thin solid;
+	cursor: pointer;
+}
+.documents {
+	padding: 10px 0 10px 30px;
+	background: url('document.png') no-repeat center left;;
+	font-size: 120%;
+	border-bottom: thin solid;
+	font-weight: normal;
+}
+
+.upload {
+	background: url('file_transfer.png') no-repeat center left;;
+}
+
+.mm-documents .pdf {
+	display: inline-block;
+	margin: 0px 10px 15px 10px;
+	padding: 12px 50px;
+	white-space: nowrap;
+	background: url('file-pdf.png') no-repeat left;
+	color: inherit;
+}

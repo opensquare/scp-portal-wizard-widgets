@@ -1,0 +1,11 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-internal-users-edit.html</url>
+	</parameters>
+	<attributes>
+		<displayHeader>false</displayHeader>
+		<js>scp-internal-users-edit.js</js>
+		<css>scp-internal-users-edit.css</css>
+	</attributes>
+</widget>

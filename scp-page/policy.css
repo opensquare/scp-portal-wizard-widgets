@@ -1,0 +1,145 @@
+/* New page styling */
+article[type='internal'] .new-square[type='policy'] {
+	background-image: url('images/pact-light.png');
+	background-color: #9BBB59;
+}
+article[type='internal'] .new-square[type='policy'][subtype='search'] {
+	background-image: url('images/search-light.png');
+}
+article[type='internal'] .new-square[type='policy'][subtype='newbusiness'] {
+	background-image: url('images/folder-light.png');
+}
+article[type='internal'] .new-square[type='policy'][subtype='servicing'] {
+	background-image: url('images/folder-light.png');
+}
+article[type="internal"] .new-square[type='policy'][subtype='renewals'] {
+	background-image: url('images/symbol-refresh-light.png');
+}
+
+/* Aside (tabs) styling */
+#content aside[type='policy']{
+	background-image: url('images/pact-dark.png');
+	border-color: #9BBB59; 
+}
+#content aside[type='policy'].on{
+	background-color: #9BBB59; 
+	background-image: url('images/pact-light.png');
+}
+#content aside[type='policy'][subtype='search']{
+	background-image: url('images/search-dark.png');
+}
+#content aside[type='policy'][subtype='search'].on{
+	background-image: url('images/search-light.png');
+}
+#content aside[type='policy'][subtype='newbusiness']{
+	background-image: url('images/folder-dark.png');
+}
+#content aside[type='policy'][subtype='newbusiness'].on{
+	background-image: url('images/folder-light.png');
+}
+#content aside[type='policy'][subtype='servicing']{
+	background-image: url('images/folder-dark.png');
+}
+#content aside[type='policy'][subtype='servicing'].on{
+	background-image: url('images/folder-light.png');
+}
+#content aside[type='policy'][subtype='renewals']{
+	background-image: url('images/symbol-refresh-dark.png');
+}
+#content aside[type='policy'][subtype='renewals'].on{
+	background-image: url('images/symbol-refresh-light.png');
+}
+#content aside[type='policy'][subtype='client']{
+	background-image: url('images/id-dark.png');
+}
+#content aside[type='policy'][subtype='client'].on{
+	background-image: url('images/id-light.png');
+}
+
+/* Article (pages) styling */
+#content article[type='policy'], #content article[type='policy'] .content-helper, #content article[type='policy'] .content-body{
+	border-color: #9BBB59;
+}
+#content article[type='policy'] .content-header, #content article[type='policy'] .content-helper{
+	background-color: #9BBB59;
+}
+#content article[type='policy']::-webkit-scrollbar-thumb{
+	background-color: #9BBB59;
+}
+#content article[type='policy'] .content-header-pulldown {
+	background-color: #9BBB59;
+}
+#content article[type='policy'] .content-header-pulldown-tabs>span {
+	background-color: #9BBB59;
+}
+
+/* Specific page styling */
+
+/* Search page */
+#content article[type='policy'][subtype='search'] .search-results li:nth-child(odd){
+	background-color: rgba(155,187,89,0.3);
+}
+#content article[type='policy'][subtype='search'] .search-results li {
+	background-image: url('images/pact-dark-small.png');
+}
+#content article[type='policy'][subtype='search'] .search-results li.clientRelationship {
+	background-image: url('images/id-dark-small.png');
+}
+#content article[type='policy'][subtype='search'] .search-results li a{
+	background-color: #9BBB59;
+}
+
+/* Accounts popup */
+#popup {
+	border-color: #9BBB59 !important;
+}
+#popupClose {
+	color: #FFF;
+}
+#popup .pactAccount {
+	padding: 1px;
+}
+#popup .pactAccount h1 {
+	margin-top: 0;
+	padding: 2%;
+	color: #FFF;
+	background-color: #9BBB59;
+	border-radius: 10px 10px 0 0;
+}
+#popup .pactAccount .balance {
+	font-size: 1em;
+	font-weight: normal;
+	text-align: right;
+}
+#popup .pactAccount .balance span {
+	padding: 0 0.1em 0 0.5em;
+	font-size: 2em;
+}
+#popup .pactAccount .transactions {
+	max-height: 20em;
+	padding: 0.5em;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#popup .pactAccount table {
+	min-width: 35em;
+	font-size: small;
+}
+#popup .pactAccount th, #popup .pactAccount td {
+	padding: 0.2em 0.5em;
+}
+#popup .pactAccount th:nth-child(3), #popup .pactAccount td:nth-child(3) {
+	text-align: right;
+}
+#popup .pactAccount th {
+	color: #FFF;
+	background-color: #555;
+	text-align: left;
+}
+#popup .pactAccount tbody:empty {
+	display: block;
+	min-height: 5em;
+}
+.pactAccount .transaction.debit {
+	color: #c77;
+}

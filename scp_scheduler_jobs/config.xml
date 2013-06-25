@@ -1,0 +1,11 @@
+<widget>
+	<type>httpRequest</type>
+	<parameters>
+		<method>GET</method>
+		<url>{scheduler}/jobs</url>
+		<xsl>jobs</xsl>
+	</parameters>
+	<attributes>
+		<js>scp-scheduler-jobs.js</js>
+	</attributes>
+</widget>

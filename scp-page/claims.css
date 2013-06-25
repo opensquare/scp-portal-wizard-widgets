@@ -1,0 +1,61 @@
+/* New page styling */
+article[type='internal'] .new-square[type='claims'] {
+	background-image: url('images/pact-light.png');
+	background-color: #4BACC6;
+}
+article[type='internal'] .new-square[type='claims'][subtype='search'] {
+	background-image: url('images/search-light.png');
+}
+article[type='internal'] .new-square[type='claims'][subtype='new'] {
+	background-image: url('images/plus-light.png');
+}
+
+/* Aside (tabs) styling */
+#content aside[type='claims']{
+	background-image: url('images/pact-dark.png');
+	border-color: #4BACC6; 
+}
+#content aside[type='claims'].on{
+	background-color: #4BACC6; 
+	background-image: url('images/pact-light.png');
+}
+#content aside[type='claims'][subtype='search']{
+	background-image: url('images/search-dark.png');
+}
+#content aside[type='claims'][subtype='search'].on{
+	background-image: url('images/search-light.png');
+}
+#content aside[type='claims'][subtype='new']{
+	background-image: url('images/plus-dark.png');
+}
+#content aside[type='claims'][subtype='new'].on{
+	background-image: url('images/plus-light.png');
+}
+
+/* Article (pages) styling */
+#content article[type='claims'], #content article[type='claims'] .content-helper, #content article[type='claims'] .content-body{
+	border-color: #4BACC6;
+}
+#content article[type='claims'] .content-header, #content article[type='claims'] .content-helper{
+	background-color: #4BACC6;
+}
+#content article[type='claims']::-webkit-scrollbar-thumb{
+	background-color: #4BACC6;
+}
+#content article[type='claims'] .content-header-pulldown {
+	background-color: #4BACC6;
+}
+#content article[type='claims'] .content-header-pulldown-tabs>span {
+	background-color: #4BACC6;
+}
+
+/* Search page */
+#content article[type='claims'][subtype='search'] .search-results li:nth-child(odd){
+	background-color: rgba(75,172,198,0.3);
+}
+#content article[type='claims'][subtype='search'] .search-results li {
+	background-image: url('images/pact-dark-small.png');
+}
+#content article[type='claims'][subtype='search'] .search-results li a{
+	background-color: #4BACC6;
+}

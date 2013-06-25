@@ -1,0 +1,10 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-finance-accounts.html</url>
+	</parameters>
+	<attributes>
+		<displayHeader>false</displayHeader>
+		<page.title>Accounts</page.title>
+	</attributes>
+</widget>

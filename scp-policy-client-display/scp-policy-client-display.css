@@ -1,0 +1,147 @@
+.scp-policy-client-display .property-group:hover button {
+	opacity: 1;
+}
+.scp-policy-client-display .side1 {
+	display: inline-block;
+	width: 15%;
+	margin-top: 1em;
+	vertical-align: top;
+}
+.scp-policy-client-display .side2 {
+	display: inline-block;
+	width: 84%;
+	margin-top: 1em;
+}
+.scp-policy-client-display details {
+	margin-left: 0;
+	padding-top: 1em;
+}
+.scp-policy-client-display summary {
+	margin-bottom: 1em;
+	font-size: 1.25em;
+	font-weight: normal;
+	color: #777;
+	border-bottom: thin solid;
+	cursor: pointer;
+}
+
+/* Side1 formatting */
+.scp-policy-client-display .picture {
+	min-height: 100px;
+	background: url('person-dark-large.png') no-repeat center;
+	background-size: contain;
+}
+.scp-policy-client-display .picture.Male {
+	background-image: url('person-man-dark-large.png');
+}
+.scp-policy-client-display .picture.Female {
+	background-image: url('person-woman-dark-large.png');
+}
+.scp-policy-client-display .status {
+	text-align: center;
+	font-size: small;
+	font-weight: bold;
+}
+
+/* Side2 formatting */
+.scp-policy-client-display .property-group {
+	margin: 0 0 2em 0;
+	clear: left;
+}
+.scp-policy-client-display .property-group > .property-group {
+	display: inline-block;
+	margin: 0 2em 0 0;
+}
+.scp-policy-client-display .property-label {
+	display: inline-block;
+	width: 10%;
+	min-width: 6em;
+	padding: 0.1em 0 0.1em 0;
+	color: #9BBB59;
+}
+.scp-policy-client-display .property-value {
+	display: inline-block;
+	padding: 0.1em 1em 0.1em 0.25em;
+	color: #000;
+	border-bottom: thin dashed #CCC;
+}
+.scp-policy-client-display .property-value:empty:before {
+	content: '\00a0'; /* fix missing content height problem */
+}
+.scp-policy-client-display .property-group > .property-group .property-value {
+	float: left;
+}
+.scp-policy-client-display .name {
+	padding-bottom: 0.5em;
+	border-bottom: thick solid #777;
+}
+.scp-policy-client-display .name .property-value {
+	padding: 0 0.25em 0 0!important;
+	font-size: 1.6em;
+	border-bottom: none;
+}
+.scp-policy-client-display .genderage :nth-child(2) {
+	margin-right: 3em;
+}
+.scp-policy-client-display .occupation :nth-child(2) {
+	margin-right: 3em;
+}
+.scp-policy-client-display .address {
+	margin: 0 0 2em 0;
+}
+.scp-policy-client-display .address .property-label {
+	float: left;
+	margin-right: 0.3em; /* compensation for white space in markup */
+}
+.scp-policy-client-display .map {
+	float: right;
+	-webkit-filter: grayscale(100%) brightness(60%) contrast(200%);
+}
+.scp-policy-client-display .contact-details:hover .map {
+	-webkit-filter: none;
+}
+.scp-policy-client-display .map img {
+	border-radius: 0.35em;
+}
+.scp-policy-client-display .address .property-group {
+	display: block;
+	margin: 0
+}
+.scp-policy-client-display .property-group .auto {
+	min-width: auto;
+	padding-right: 1em;
+}
+.scp-policy-client-display .property-group .short {
+	width: 10%;
+	min-width: 6em;
+}
+.scp-policy-client-display .property-group .medium {
+	width: 35%;
+	min-width: 15em;
+}
+.scp-policy-client-display .property-group .long {
+	width: 75%;
+	min-width: 24em;
+}
+.scp-policy-client-display .action {
+	display: inline-block;
+	width: 1.35em;
+	height: 1.35em;
+	margin-left: 0.5em;
+	background: #555 no-repeat center center;
+	background-size: 1em;
+	border-radius: 0.25em;
+	vertical-align: top;
+}
+.scp-policy-client-display details:hover .action {
+	background-color: #0DB4F2;
+}
+.scp-policy-client-display .property-group.email .send {
+	background-image: url('email-light-small.png');
+}
+.scp-policy-client-display .property-group.phone .call {
+	background-image: url('phone-light-small.png');
+}
+.scp-policy-client-display .licence :nth-child(2) {
+	margin-right: 3em;
+}

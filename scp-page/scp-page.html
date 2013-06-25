@@ -1,0 +1,66 @@
+		<!--
+		// SCP-style Page - (c) Open Square 2012
+		// =====================================
+		//
+		// (See comments in main index.html about special server-side commands available on these pages)
+		//
+		// Special features of this page include:
+		//		a) A header bar fixed to the top of the window with user display and actions.
+		//		b) A footer bar fixed to the bottom of the window.
+		//		c) A tab/page based approach using widgets (custom js keeps the tabs/pages in sync).
+		//		d) A hashtag driven approach to working with tabs/pages.
+		//
+		// This page uses html5 and a fluid layout suitable for tablets, it probably won't work in older browsers (without some tweaking).
+		//
+		-->
+		<header id="header">
+			<h2 id="header-title">
+				<a href="index.html">Service Centre Portal</a>
+			</h2>
+			<span id="header-user">
+				<span id="header-user-name"><a href="#internal/profile?1234-5678-9012-3456">Joe Smith</a></span>
+				<a id="header-logout" href="/logout">Logout</a>
+			</span>
+		</header>
+		<nav id="nav">&nbsp;</nav>
+		<section id="content">
+			<section id="content-asides">
+				<!-- Tabs go here as <asides> -->
+				<!-- Permanent New Page tab -->
+				<aside class="on" pageid="internal/newpage" type="internal" subtype="newpage">
+					<div class="title">New Page</div>
+				</aside>
+			</section>
+			<section id="content-articles">
+				<!-- Pages go here as <articles> -->
+				<!-- Permanent New Page page -->
+				<article class="on" pageid="internal/newpage" type="internal" subtype="newpage" hash="">
+					<section class="content-header"><h2>Start a new page</h2></section>
+					<section id="new-page" class="content-body">
+						<details id="new-new" open>
+							<summary><h2>New Pages</h2></summary>
+							<div class="widget" name="scp-new-pages"></div>
+						</details>
+						<details id="new-closed">
+							<summary><h2>Recently Closed Pages</h2></summary>
+						</details>
+					</section>
+				</article>
+			</section>
+		</section>
+        <div id="popupContainer" style="display:none">
+            <div id="popupBackground" onclick="$('#popupContainer').hide()"> </div>
+            <div id="popup">
+                <a id="popupClose" onclick="$('#popupContainer').hide()">close</a>
+                <div id="popupContent"> </div>
+            </div>
+        </div>
+		<div id="modalPopupContainer" style="display:none">
+			<div id="modalPopupBackground"> </div>
+			<div id="modalPopup">
+				<div id="modalPopupContent"> </div>
+			</div>
+		</div>
+		<footer id="footer">
+			&copy; Open Square, 2013
+		</footer>

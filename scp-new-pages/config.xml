@@ -1,0 +1,10 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-new-pages.jsp</url>
+	</parameters>
+	<attributes>
+		<js>ckeditor.js</js>
+		<displayheader>false</displayheader>
+	</attributes>
+</widget>

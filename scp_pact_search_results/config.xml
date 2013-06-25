@@ -1,0 +1,36 @@
+<widget>
+	<type>pactResponseLayout</type>
+	<parameters>
+		<xsl>scp_pact_search_results</xsl>
+		<pactrequest><![CDATA[<pactrequest>
+						<target>
+							<SelectTimeSpanEntity>
+								<quickSearch><value>{searchValue}</value><comparison>startsWith</comparison></quickSearch>
+							</SelectTimeSpanEntity>
+						</target>
+						<context>
+                            <locale>
+                                <language>en</language>
+                                <country>GB</country>
+                            </locale>
+                            <actor><actorUid>123</actorUid></actor>
+                            <party><partyUid>123</partyUid></party>
+                            <sessionId>{sessionId}</sessionId>
+                            <dateFormat>dd/MM/yyyy</dateFormat>
+                        </context>
+						<timepoint>
+							<effectivetime>now</effectivetime>
+							<physicaltime>now</physicaltime>
+						</timepoint>
+						<return>
+							<name>asIdentifiedEntity</name>
+							<params><descriptionPattern>{description} ({entityType} - {status})</descriptionPattern></params>
+						</return>
+					</pactrequest>]]></pactrequest>
+	</parameters>
+	<attributes>
+		<js>scp_pact_search_results.js</js>
+		<channel>pactSearch</channel>
+		<delayLoad>true</delayLoad>
+	</attributes>
+</widget>

@@ -1,0 +1,29 @@
+#popupBackground, #modalPopupBackground {
+   position:absolute;
+   z-index:998;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background-color:rgba(0,0,0,0.7);
+}
+#popup, #modalPopup {
+   position:absolute;
+   z-index:999;
+   top:10%;
+   left:20%;
+   background-color: #FFF;
+   border-width: thick;
+   border-style: solid;
+   border-radius: 1em;
+}
+#popupClose {
+   position: absolute;
+   right: 0;
+   margin: 1%;
+   cursor: pointer;
+   font-size: small;
+}
+#popupClose:hover {
+   border-bottom: thin dashed;
+}

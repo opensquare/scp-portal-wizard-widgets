@@ -1,0 +1,91 @@
+/* New page styling */
+article[type='internal'] .new-square[type='quote'] {
+	background-image: url('images/napier-light.png');
+	background-color: #C0504D;
+}
+article[type='internal'] .new-square[type='quote'][subtype='search'] {
+	background-image: url('images/search-light.png');
+}
+article[type='internal'] .new-square[type='quote'][subtype='quote'] {
+	background-image: url('images/calculator-buttons-light.png');
+}
+article[type='internal'] .new-square[type='quote'][subtype='new'] {
+	background-image: url('images/plus-light.png');
+}
+
+/* Aside (tabs) styling */
+#content aside[type='quote']{
+	background-image: url('images/napier-dark.png');
+	border-color: #C0504D; 
+}
+#content aside[type='quote'].on{
+	background-color: #C0504D; 
+	background-image: url('images/napier-light.png');
+}
+#content aside[type='quote'][subtype='quote']{
+	background-image: url('images/quote-dark.png');
+}
+#content aside[type='quote'][subtype='quote'].on{
+	background-image: url('images/quote-light.png');
+}
+#content aside[type='quote'][subtype='search']{
+	background-image: url('images/search-dark.png');
+}
+#content aside[type='quote'][subtype='search'].on{
+	background-image: url('images/search-light.png');
+}
+#content aside[type='quote'][subtype='new']{
+	background-image: url('images/plus-dark.png');
+}
+#content aside[type='quote'][subtype='new'].on{
+	background-image: url('images/plus-light.png');
+}
+
+/* Article (pages) styling */
+#content article[type='quote'], #content article[type='quote'] .content-helper, #content article[type='quote'] .content-body{
+	border-color: #C0504D;
+}
+#content article[type='quote'] .content-header, #content article[type='quote'] .content-helper{
+	background-color: #C0504D;
+}
+#content article[type='quote']::-webkit-scrollbar-thumb{
+	background-color: #C0504D;
+}
+#content article[type='quote'] .content-header-pulldown {
+	background-color: #C0504D;
+}
+#content article[type='quote'] .content-header-pulldown-tabs>span {
+	background-color: #C0504D;
+}
+
+/* Specific page styling */
+
+/* Search page */
+#content article[type='quote'][subtype='search'] .search-results li:nth-child(odd) {
+	background-color: rgba(192,89,77,0.3);
+}
+#content article[type='quote'][subtype='search'] .search-results li:before {
+	content: attr(calcref);
+	margin-right: 2%;
+}
+#content article[type='quote'][subtype='search'] .search-results li {
+	background-image: url('images/calculator-buttons-small.png');
+}
+#content article[type='quote'][subtype='search'] .search-results li>*{
+	display: none;
+}
+#content article[type='quote'][subtype='search'] .search-results calcSource,
+#content article[type='quote'][subtype='search'] .search-results physicalTime,
+#content article[type='quote'][subtype='search'] .search-results li span{
+	display: inline-block;
+	max-width: 12.5%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#content article[type='quote'][subtype='search'] .search-results li span:empty{
+	display: none !important;
+}
+#content article[type='quote'][subtype='search'] .search-results li a{
+	display: block;
+	background-color: #A0302D;
+}

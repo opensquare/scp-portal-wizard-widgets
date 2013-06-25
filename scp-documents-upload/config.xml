@@ -1,0 +1,11 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-documents-upload.html</url>
+	</parameters>
+	<attributes>
+		<css>scp-documents-upload.css</css>
+		<displayheader>false</displayheader>
+		<js>scp-documents-upload.js</js>
+	</attributes>
+</widget>

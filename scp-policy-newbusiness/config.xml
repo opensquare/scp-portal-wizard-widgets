@@ -1,0 +1,32 @@
+<widget>
+	<type>pactResponseLayout</type>
+	<parameters>
+		<xsl>scp-policy-new-business</xsl>
+		<pactrequest><![CDATA[<pactrequest>
+						<target>
+							<SelectTimeSpanEntity>
+								<entityType>policy</entityType>
+                                <statusList>Referred,Declined</statusList>
+							</SelectTimeSpanEntity>
+						</target>
+						<context>
+                            <locale>
+                                <language>en</language>
+                                <country>GB</country>
+                            </locale>
+                            <actor><actorUid>123</actorUid></actor>
+                            <party><partyUid>123</partyUid></party>
+                            <sessionId>{sessionId}</sessionId>
+                            <dateFormat>dd/MM/yyyy</dateFormat>
+                        </context>
+						<timepoint>
+							<effectivetime>now</effectivetime>
+							<physicaltime>now</physicaltime>
+						</timepoint>
+						<return>
+							<name>asIdentifiedEntity</name>
+							<params><descriptionPattern>{description} ({status})|{entityType}|{status}</descriptionPattern></params>
+						</return>
+					</pactrequest>]]></pactrequest>
+	</parameters>
+</widget>

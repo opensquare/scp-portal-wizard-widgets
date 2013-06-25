@@ -1,0 +1,8 @@
+.scp-internal-users-list ul {
+	list-style-type: none;
+}
+
+.scp-internal-users-list .display-name {
+	display: inline-block;
+	width: 70%;
+}

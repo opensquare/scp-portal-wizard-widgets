@@ -1,0 +1,11 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-scheduler.html</url>
+	</parameters>
+	<attributes>
+		<page.title>Automated jobs</page.title>
+		<css>scp-scheduler.css</css>
+	</attributes>
+</widget>
+

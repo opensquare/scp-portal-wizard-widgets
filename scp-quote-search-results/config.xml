@@ -1,0 +1,11 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-quote-search-results.html</url>
+	</parameters>
+	<attributes>
+		<displayheader>false</displayheader>
+		<js>scp-quote-search-results.js</js>
+		<delayload>true</delayload>
+	</attributes>
+</widget>

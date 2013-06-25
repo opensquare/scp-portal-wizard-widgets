@@ -1,0 +1,33 @@
+<widget>
+	<type>pactResponse</type>
+	<parameters>
+		<xsl>scp-accounts-display</xsl>
+		<pactrequest>
+			<![CDATA[
+				<pactrequest>
+					<target>
+						<uid>{accountUid}</uid>
+					</target>
+					<context>
+						<locale><language>en</language><country>GB</country></locale>
+						<actor><actorUid>123</actorUid></actor>
+						<party><partyUid>123</partyUid></party>
+					</context>
+					<timepoint>
+						<effectivetime>ff</effectivetime>
+						<physicaltime>now</physicaltime>
+					</timepoint>
+					<return>
+						<name>asAccumulatorVersionWithPostingHistory</name>
+					</return>
+				</pactrequest>
+			]]>
+		</pactrequest>
+	</parameters>
+	<attributes>
+		<delayLoad>true</delayLoad>
+		<displayHeader>false</displayHeader>
+		<channel>accounts</channel>
+		<js>scp-accounts-display.js</js>
+	</attributes>
+</widget>

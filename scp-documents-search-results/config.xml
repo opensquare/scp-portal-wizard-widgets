@@ -1,0 +1,13 @@
+<widget>
+	<type>httpRequest</type>
+	<parameters>
+		<method>GET</method>
+		<url>http://model-office-mailmerger-end-point.osl-cloud.com:8080/mailmerger-end-point/REST/jobs/search/{searchValue}</url>
+		<xsl>scp-documents-search-results</xsl>
+	</parameters>
+	<attributes>
+		<displayheader>false</displayheader>
+		<js>scp-documents-search-results.js</js>
+		<delayLoad>true</delayLoad>
+	</attributes>
+</widget>

@@ -1,0 +1,26 @@
+.scp-pact-actions {
+	position: absolute;
+	min-width: 50px;
+	right: 0;
+	margin: 10px 20px 0 0;
+	padding-top: 50px;
+	background: url('menubars.png') no-repeat right top;
+	cursor: pointer;
+}
+.scp-pact-actions.on {
+	background-color: #DDD;
+}
+.scp-pact-actions>.widget-content {
+	display: none !important;
+}
+.scp-pact-actions.on>.widget-content {
+	display: block !important;
+}
+.scp-pact-actions a.userAction {
+	display: block;
+	padding: 0.5em;
+	background-color: #DDD;
+}
+.scp-pact-actions a.userAction:hover {
+	background: #AAA;
+}

@@ -1,0 +1,10 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-claims-search.html</url>
+	</parameters>
+	<attributes>
+		<displayheader>false</displayheader>
+		<page.title>Claims search</page.title>
+	</attributes>
+</widget>

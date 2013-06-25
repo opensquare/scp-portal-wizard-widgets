@@ -1,0 +1,10 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-finance-nonlife.html</url>
+	</parameters>
+	<attributes>
+		<displayHeader>false</displayHeader>
+		<page.title>Non-life accounts</page.title>
+	</attributes>
+</widget>

@@ -1,0 +1,9 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-internal-products.html</url>
+	</parameters>
+	<attributes>
+		<page.title>Product management</page.title>
+	</attributes>
+</widget>

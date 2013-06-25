@@ -1,0 +1,30 @@
+	<header>
+		<h2>IT Helpdesk: <span>ext.1234</span></h2>
+	</header>
+
+	<section id="scp-content">
+		<h1><a href="/"></a></h1>
+		<h2>service centre portal</h2>
+
+		<div id="login-forms">
+			<form id="login-form-enter" action="#" onsubmit="login_loginEnter('scp-page');return false;">
+				<h2>Authorised users</h2>
+				<label for="username">Username: <input type="text" name="username" id="username" autofocus required /></label>
+				<label for="password">Password: <input type="password" name="password" id="password" required /></label>
+				<button id="login-button" type="submit">Login</button>
+				<a href="#" onclick="$('#login-forms form').toggle();return false;">Forgotten your details?</a>
+			</form>
+			<form id="login-form-reset" action="#" onsubmit="login_loginReset();return false;" style="display:none;">
+				<h2>Forgotten your details?</h2>
+				<label for="username">Email: <input type="email" name="email" id="email" autofocus required /></label>
+				<label id="login-form-reset-text">Click button to receive a reset password email</label>
+				<a href="#" onclick="$('#login-forms form').toggle();return false;">Remembered your details?</a>
+				<button id="login-reset" type="submit">Send</button>
+			</form>
+		</div>
+
+	</section>
+
+	<footer>
+		<div class="widget" name="common-footer"></div>
+	</footer>

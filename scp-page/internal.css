@@ -1,0 +1,176 @@
+/* New page styling */
+article[type='internal'][subtype='newpage'] .content-body{
+	padding: 0.5em 1em 1em;
+}
+article[type='internal'] .new-square[type='internal'] {
+	background-image: url('images/gear-light.png');
+}
+article[type="internal"] .new-square[type='internal'][subtype='profile'] {
+	background-image: url('images/person-light.png');
+}
+article[type="internal"] .new-square[type='internal'][subtype='users'] {
+	background-image: url('images/person-group-light.png');
+}
+article[type="internal"] .new-square[type='internal'][subtype='products'] {
+	background-image: url('images/pact-light.png');
+}
+article[type="internal"] .new-square[type='internal'][subtype='batch'] {
+	background-image: url('images/backup-light.png');
+}
+
+/* Aside (tabs) styling */
+#content aside[type='internal']{
+	background-image: url('images/plus-dark.png');
+	border-color: #999; 
+}
+#content aside[type='internal'].on{
+	background-color: #999; 
+	background-image: url('images/plus-light.png');
+}
+#content aside[type="internal"][subtype='profile'] {
+	background-image: url('images/person-dark.png');
+}
+#content aside[type="internal"][subtype='profile'].on {
+	background-image: url('images/person-light.png');
+}
+#content aside[type="internal"][subtype='users'] {
+	background-image: url('images/person-group-dark.png');
+}
+#content aside[type="internal"][subtype='users'].on {
+	background-image: url('images/person-group-light.png');
+}
+#content aside[type="internal"][subtype='products'] {
+	background-image: url('images/pact-dark.png');
+}
+#content aside[type="internal"][subtype='products'].on {
+	background-image: url('images/pact-light.png');
+}
+#content aside[type="internal"][subtype='batch'] {
+	background-image: url('images/backup-dark.png');
+}
+#content aside[type="internal"][subtype='batch'].on {
+	background-image: url('images/backup-light.png');
+}
+
+/* Article (pages) styling */
+
+/* User management page */
+.scp-internal-users {
+	margin: 1px;
+	padding: 1em;
+}
+
+/* onoff courtesy of http://proto.io/freebies/onoff/  */
+.onoffswitch {
+	display: inline-block; position: relative; width: 122px; margin-right: 2%;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+	display: none;
+}
+.onoffswitch-label {
+	display: block; overflow: hidden; cursor: pointer;
+	border: 2px solid #666; border-radius: 5px;
+}
+.onoffswitch-inner {
+	width: 200%; margin-left: -100%;
+	-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+	-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+	float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+	font-size: 16px; color: white; font-family: ; font-weight: bold;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+	content: "Groups";
+	padding-left: 10px;
+	background-color: ; color: #333;
+}
+.onoffswitch-inner:after {
+	content: "Users";
+	padding-right: 10px;
+	background-color: ; color: #333;
+	text-align: right;
+}
+.onoffswitch-switch {
+	width: 35px; margin: -2.5px;
+	background: #777;
+	border: 2px solid #666; border-radius: 5px;
+	position: absolute; top: 0; bottom: 0; right: 88px;
+	-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	right: 0;
+}
+
+#content article[type='internal'] .users-groups {
+	display: inline-block;
+	vertical-align: top;
+}
+#content article[type='internal'] .users-groups button{
+	background-color: #a44;
+}
+#content article[type='internal'] .usergroups {
+	width:85%;
+	margin-bottom: 1em;
+	padding: 0 0 0 0.25em;
+	vertical-align: top;
+	font-size: 1.5em;
+	border: thin solid #777;
+	border-radius: 0.25em;
+}
+#content article[type='internal'] .usergroups .action {
+	background: #DDD;
+	color: #000;
+}
+#content article[type='internal'] .scp-internal-users div.widget {
+	display: inline-block;
+	width: 45%;
+	padding: 0 1em;
+	border-radius: 0.5em;
+	vertical-align: top;
+}
+#content article[type='internal'] .scp-internal-users div.widget h3 {
+	border-bottom: medium solid;
+}
+#content article[type='internal'] .scp-internal-users-permissions {
+	margin-right: 2%;
+}
+#content article[type='internal'] .scp-internal-users-permissions ul {
+	margin: 0;
+	list-style: none;
+}
+#content article[type='internal'] .scp-internal-users-permissions li {
+	padding: 0.5em 0;
+}
+#content article[type='internal'] .scp-internal-users-permissions li:nth-child(even) {
+	background-color: rgba(0,0,0,0.1);
+}
+#content article[type='internal'] .scp-internal-users-permissions input[type='checkbox'] {
+	float: right;
+}
+#content article[type='internal'] .scp-internal-users-users ul {
+	padding: 0;
+	list-style: none;
+	font-weight: bold;
+}
+#content article[type='internal'] .scp-internal-users-users li {
+	padding-left: 40px;
+	line-height: 2em;
+	background: url('images/person-dark-small.png') no-repeat;
+}
+.scp-internal-users .button {
+	float: right;
+	font-size: large;
+	background-color: #695!important;
+}
+
+/*Popup styling*/
+#popup[type='internal'] {
+	border-color: #777;
+}

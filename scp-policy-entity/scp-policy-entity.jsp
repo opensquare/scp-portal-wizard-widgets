@@ -1,0 +1,1 @@
+<div class="widget" name="displayAgreement" params="agreementUid=<%=request.getParameter("uid")%>">

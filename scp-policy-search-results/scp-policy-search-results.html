@@ -1,0 +1,8 @@
+<ul>
+	<rf.foreach select="//Entities/IdentifiedEntity" as="entity">
+	<li class="{{entity.entityType}} {{entity.state}}">
+		<span>{{entity.name}}</span>
+		<a class="button" href="#policy/{{entity.widget}}/{{entity.uid}}">show</a>
+	</li>
+	</rf.foreach>
+</ul>

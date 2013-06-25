@@ -1,0 +1,11 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-form-confirm.html</url>
+	</parameters>
+	<attributes>
+		<css>scp-form-confirm.css</css>
+		<js>scp-form-confirm.js</js>
+        <page.title>Confirm</page.title>
+	</attributes>
+</widget>

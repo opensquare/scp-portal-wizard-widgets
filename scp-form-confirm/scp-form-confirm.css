@@ -1,0 +1,21 @@
+.scp-form-confirm {
+	min-width: 16em;
+}
+.scp-form-confirm h1 {
+	margin: 0;
+	padding: 0.5em 1em 0.25em 1em;
+	color: #FFF;
+	background-color: #888;
+	border: thin solid;
+	border-radius: 10px 10px 0 0;
+}
+.scp-form-confirm p {
+	padding: 0 1em;
+}
+.scp-form-confirm .button {
+	margin: 3em; 
+	font-size: 1.25em;
+}
+.scp-form-confirm .rf-debugbar {
+	opacity: 0.1;
+}

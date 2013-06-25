@@ -1,0 +1,170 @@
+body{
+	min-width: 275px;
+	margin: 0;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: #F0F0F0;
+	color: #333;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+#backgroundText text{
+	fill: none;
+	stroke: rgba(0, 0, 0, 0.05);
+}
+
+header{
+	width: 40%;
+	min-width: 200px;
+	margin: 1em auto;
+	text-align: right;
+}
+header h2{
+	margin: 0;
+	font-size: 1em;
+	color: #0DB4F2; /* Blue */
+}
+header h2 span{
+	color: #92CE56; /* Green */
+}
+
+#scp-content {
+	width: 40%;
+	min-width: 200px;
+	margin: auto;
+}
+#scp-content>h1{
+	height: 125px;
+	margin: 0 0 0 1%;
+}
+#scp-content>h1>a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: url('model-insurance.png') no-repeat left bottom;
+}
+#scp-content>h2{
+	display: inline-block;
+	margin: 0;
+	padding: 2px 0.75em;
+	background: rgba(0,0,0,0.5);
+	color: rgba(255,255,255,0.9);
+	font-weight: normal;
+	font-size: 2em;
+	border-radius: 0 0.15em 0.15em 0;
+}
+
+div.widget>.widget-head{
+	display: none;
+}
+div.widget>.widget-messages{
+	overflow: hidden;
+	background-color: #A0F0F0;
+	color: #333;
+	border-radius: 0.25em;
+}
+div.widget>.widget-messages>div{
+	padding: 0.25em 0.5em;
+}
+div.widget>.widget-messages>div>a{
+	float: right;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('symbol-close.png') no-repeat;
+	cursor: pointer;
+}
+div.widget>.widget-messages>div.error{
+	background-color: #F0A0A0;
+}
+#login-forms{
+	border: thick solid rgba(0,0,0,0.5);
+	margin: 1px 0;
+	background: #FFF;
+	border-radius: 0.25em;
+}
+#login-forms form{
+	display: inline-block;
+	vertical-align: top;
+	padding: 2%;
+}
+#login-forms h2{
+	margin: 0 0 0.5em 0;
+	background: none;
+	color: #555;
+}
+#login-forms h3{
+	font-size: 1.1em;
+	margin: 0;
+}
+#login-forms label{
+	display: inline-block;
+	width: 100%;
+	margin-top: 1em;
+}
+#login-forms input{
+	display: block;
+	width: 97%;
+	font-size: 1.5em;
+	border: thin solid #AAA;
+	padding: 0.1em 0.25em;
+}
+#login-forms button{
+	float: right;
+	margin-top: 1em;
+	padding: 0.2em 2em;
+	background: #F79646;
+	color: white;
+	border: none;
+	border-radius: 0.25em;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+#login-forms button:hover{
+	background-color: #E78636;
+}
+#login-forms a{
+	float: left;
+	margin-top: 1.5em;
+	font-size: 0.75em;
+	color: inherit;
+	text-decoration: none;
+}
+#login-forms a:hover{
+	border-bottom: thin dashed;
+}
+#login-form-reset-text{
+	padding: 0.6em 0;
+}
+#login-forms .loading{
+	opacity: 0.5;
+}
+
+footer{
+	width: 40%;
+	min-width: 200px;
+	margin: 1em auto;
+	padding-bottom: 1em;
+	background-color: #777;
+	color: #FFF;
+	font-size: 0.75em;
+	border-radius: 0 0 0.5em 0.5em;
+}
+footer p{
+	padding: 0 1em 1em 1em;
+	margin: 0;
+}
+footer p:first-child{
+	padding-top: 1em;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+	header,footer,#scp-content{
+		width:98%;
+	}
+}

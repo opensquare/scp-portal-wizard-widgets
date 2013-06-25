@@ -1,0 +1,9 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-mis-dashboard.html</url>
+	</parameters>
+	<attributes>
+		<page.title>Executive dashboard</page.title>
+	</attributes>
+</widget>

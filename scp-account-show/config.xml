@@ -1,0 +1,35 @@
+<widget>
+	<type>pactResponseLayout</type>
+	<parameters>
+		<xsl>scp-account-show</xsl>
+		<pactrequest><![CDATA[<pactrequest>
+		<target><uid>{accountUid}</uid></target>
+	<context>
+		<locale>
+			<language>en</language>
+			<country>GB</country>
+		</locale>
+		<actor><actorUid>123</actorUid></actor>
+        <party><partyUid>123</partyUid></party>
+		<process/>
+		<evType/>
+		<evSubType/>
+		<sessionId>{sessionId}</sessionId>
+		<dateFormat>dd/MM/yyyy kk:mm:ss</dateFormat>
+		<timeWarning>2000</timeWarning>
+	</context>
+	<timepoint>
+		<effectivetime>ff</effectivetime>
+		<physicaltime>now</physicaltime>
+	</timepoint>
+	<return>
+		<name>asAccumulatorVersionWithPostingHistory</name>
+	</return>
+</pactrequest>]]></pactrequest>
+	</parameters>
+	<attributes>
+		<js>scp-account-show.js</js>
+		<delayLoad>true</delayLoad>
+        <page.title>Account display</page.title>
+	</attributes>
+</widget>

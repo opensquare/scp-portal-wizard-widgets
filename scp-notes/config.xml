@@ -1,0 +1,12 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-notes.html</url>
+	</parameters>
+	<attributes>
+		<displayheader>false</displayheader>
+		<js>scp-notes.js</js>
+		<css>scp-notes.css</css>
+		<page.reusable>true</page.reusable>
+	</attributes>
+</widget>

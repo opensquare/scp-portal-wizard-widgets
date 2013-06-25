@@ -1,0 +1,7 @@
+<widget>
+	<type>httpRequest</type>
+	<parameters>
+		<method>GET</method>
+		<url>{scheduler}/manager/status</url>
+	</parameters>
+</widget>

@@ -1,0 +1,10 @@
+<widget>
+	<type>layout</type>
+	<parameters>
+		<url>scp-claims-show.html</url>
+	</parameters>
+	<attributes>
+		<js>scp-claims-show.js</js>
+		<page.title>Claims show</page.title>
+	</attributes>
+</widget>

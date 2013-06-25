@@ -1,0 +1,22 @@
+/* New page styling */
+article[type='internal'] .new-square[type='external'] {
+	color: #333;
+	background-color: #FFF;
+	background-image: url('images/gear-dark.png');
+}
+article[type="internal"] .new-square[type='external'][subtype='network'] {
+	background-image: url('images/network-monitor-dark.png');
+}
+article[type="internal"] .new-square[type='external'][subtype='pactdash'] {
+	background-image: url('images/pact-dark.png');
+}
+article[type="internal"] .new-square[type='external'][subtype='napierdash'] {
+	background-image: url('images/napier-dark.png');
+}
+article[type="internal"] .new-square[type='external'][subtype='mmdash'] {
+	background-image: url('images/mm-dark.png');
+}
+article[type="internal"] .new-square[type='external'][subtype='pwdash'] {
+	background-image: url('images/pw-dark.png');
+}
+

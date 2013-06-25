@@ -1,0 +1,41 @@
+<widget>
+	<type>pactResponseLayout</type>
+	<parameters>
+		<xsl>userActions</xsl>
+		<pactrequest><![CDATA[<pactrequest>
+		<target><uid>{agreementUid}</uid></target>
+	<context>
+		<locale>
+			<language>en</language>
+			<country>GB</country>
+		</locale>
+		<actor><actorUid>{actorUid}</actorUid></actor>
+		<party><partyUid>{partyUid}</partyUid></party>
+		<process/>
+		<evType/>
+		<evSubType/>
+		<sessionId>{sessionId}</sessionId>
+		<dateFormat>dd/MM/yyyy kk:mm:ss</dateFormat>
+		<timeWarning>2000</timeWarning>
+	</context>
+	<timepoint>
+		<effectivetime>now</effectivetime>
+		<physicaltime>now</physicaltime>
+	</timepoint>
+	<return>
+		<name>asActionsForParty</name>
+		<params>
+			<depth>0</depth>
+			<suppressInternalActions>true</suppressInternalActions>
+			<partyuid>{partyUid}</partyuid>
+			<actoruid>{actorUid}</actoruid>
+			<authorities>act,view</authorities>
+		</params>
+	</return>
+</pactrequest>]]></pactrequest>
+	</parameters>
+	<attributes>
+		<js>scp-pact-actions.js</js>
+		<css>scp-pact-actions.css</css>
+	</attributes>
+</widget>

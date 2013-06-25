@@ -1,0 +1,70 @@
+/* New page styling */
+article[type='internal'] .new-square[type='finance'] {
+	background-image: url('images/coins-light.png');
+	background-color: #9BBB59;
+}
+
+/* Aside (tabs) styling */
+#content aside[type='finance']{
+	background-image: url('images/coins-dark.png');
+	border-color: #9BBB59;
+}
+#content aside[type='finance'].on{
+	background-image: url('images/coins-light.png');
+	background-color: #9BBB59;
+}
+
+/* Article (pages) styling */
+#content article[type='finance'], #content article[type='finance'] .content-helper, #content article[type='finance'] .content-body {
+	border-color: #9BBB59;
+}
+#content article[type='finance'] .content-header, #content article[type='finance'] .content-helper {
+	background-color: #9BBB59;
+}
+#content article[type='finance']::-webkit-scrollbar-thumb{
+	background-color: #9BBB59;
+}
+#content article[type='finance'] .content-header-pulldown {
+	background-color: #9BBB59;
+}
+#content article[type='finance'] .content-header-pulldown-tabs>span {
+	background-color: #9BBB59;
+}
+#content article[type='finance']>.content-body{
+	padding: 1%;
+}
+
+/* Specific page styling */
+#content article[type='finance'] .scp-accounts-list select {
+	width:100%;
+	margin-bottom: 1em;
+	font-size: 1.5em;
+}
+#content article[type='finance'] .scp-accounts-display .properties {
+	width: 100%;
+	text-align: right;
+}
+#content article[type='finance'] .scp-accounts-display .accountBalance td {
+	font-size: 3em;
+}
+#content article[type='finance'] .scp-accounts-display .accountEffectiveTime td {
+	font-size: 0.9em;
+}
+#content article[type='finance'] .scp-accounts-display .transactions {
+	width: 100%;
+	font-size: 0.9em;
+}
+#content article[type='finance'] .scp-accounts-display .transactions thead {
+	background-color: #555;
+	color: #FFF;
+	text-align: left;
+}
+#content article[type='finance'] .scp-accounts-display .transactions th, #content article[type='finance'] .scp-accounts-display .transactions td {
+	padding: 0.5em;
+}
+#content article[type='finance'] .scp-accounts-display .transactions th:nth-child(3), #content article[type='finance'] .scp-accounts-display .transactions td:nth-child(3) {
+	text-align: right;
+}
+#content article[type='finance'] .scp-accounts-display .transactions tr:nth-child(even) {
+	background-color: rgba(155,187,89,0.5);
+}

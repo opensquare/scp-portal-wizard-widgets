@@ -1,0 +1,9 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-policy-servicing.html</url>
+	</parameters>
+	<attributes>
+		<page.title>Policy servicing</page.title>
+	</attributes>
+</widget>

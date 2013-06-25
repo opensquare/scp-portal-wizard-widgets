@@ -1,0 +1,9 @@
+<widget>
+	<type>internalPage</type>
+	<parameters>
+		<url>scp-policy-renewals.html</url>
+	</parameters>
+	<attributes>
+		<page.title>Policy renewals</page.title>
+	</attributes>
+</widget>
